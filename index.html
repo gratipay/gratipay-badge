@@ -26,7 +26,7 @@
       domvas.toImage($button, function (err, img) {
         var $canvas = document.createElement('canvas'),
             context = $canvas.getContext('2d');
-        document.body.appendChild(img);
+        document.body.appendChild($canvas);
         context.drawImage(img, 0, 0);
       });
     </script>
