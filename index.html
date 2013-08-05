@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <button class="button primary" id="content">
+      <img width="33" height="33" style="float: left;margin-left: -10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAACC0lEQVRYhe3Xv2saYRzH8YyO/Vcy6ujo6GigYHWR0iE4iIVE6FKQQiFkCOni0kJoOtzQQuxgQmitCk1LKCGBoImY1JCQIOTHaeTd4U65JPc899x5N5T2AwfC432/L+45vnc3NfU3BwgBUWAGyANZ83cUeBR08wSwAuiIowMakPC7eQSoSRqLUgOifgAyHprfvzLZSQDLEwKsKXoBzPoIGOWpG0A4AAAYWxNWRWwEhACoqQDiorMHwz7V35+pdDS6V50H62c3J1Q6GuXD9/T0cxkk7ukqXN9e8upHllw1Qa6a4Pm3x3w9Lo/XW71d5uup8fp8PWULNaM5IWwHUb1bGTewHi+/P+P1z5zt2seDdyKEjmiyYoxd25Tbq7aNZMfbvQVRORANMYyxbJtWb9c1YvPokwzxRITIy87SmiVlwNKvF7JSIJqiTojBsM/i9pwjoNBIc3176YTIu96OUbpXHQqNtBSxc77lVAZET1mMp6Vjtk6/CAHl9qpKCYCICBECLlQqfNh/8wCwuD2nCrgAQrYIE7KiUmUw7N8ZXoVGmrObE1VESQgwETHVStb7Q/E+GCUmRZgQ5QdYo7uO1iy5AWw4AkxEGPl7pNfowLQSwoQkA0AklQEWSNFHgPvXOwskw2RbowMZzwALZBpY8wCoIRpKE2DiGHNENtB08z/ytycfMMLPwEAb/88/kT9rAdmvExg27gAAAABJRU5ErkJggg==">
+      <span style="line-height: 30px; margin-left: 7px; font-size: 1.1em;">Support via Gittip</span>
+    </button>
+    
+    <script src="domvas.js"></script>
+    <script>
+      var $content = document.getElementById('content');
+      domvas.toImage($content, function (img) {
+        console.log(img);
+      });
+    </script>
+  </body>
+
+</html>
