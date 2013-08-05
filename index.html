@@ -2,20 +2,32 @@
 <html>
 
   <head>
+    <!-- GitHub styles -->
     <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background: linen;
+      }
+    </style>
   </head>
 
   <body>
-    <button class="button primary" id="content">
-      <img width="33" height="33" style="float: left;margin-left: -10px;" src="gittip.png">
-      <span style="line-height: 30px; margin-left: 7px; font-size: 1.1em;">Support via Gittip</span>
-    </button>
+    <div>
+      <button class="button primary" id="button">
+        <img width="33" height="33" style="float: left;margin-left: -10px;" src="gittip.png">
+        <span style="line-height: 30px; margin-left: 7px; font-size: 1.1em;">Support via Gittip</span>
+      </button>
+    </div>
 
     <script src="domvas.js"></script>
     <script>
-      var $content = document.getElementById('content');
-      domvas.toImage($content, function (img) {
-        console.log(img);
+      var $button = document.getElementById('button'),
+          buttonStyle = window.getComputedStyle($button);
+      domvas.toImage($button, function (err, img) {
+        var $canvas = document.createElement('canvas'),
+            context = $canvas.getContext('2d');
+        document.body.appendChild(img);
+        context.drawImage(img, 0, 0);
       });
     </script>
   </body>
