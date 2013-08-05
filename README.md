@@ -45,7 +45,7 @@ The build process is tedious and questionably non-trivial.
 [pixlr]: http://pixlr.com/editor/
 
 ## Donating
-Support this project and [others by twolfson][gittip-twolfson] via [gittip-twolfson][].
+Support this project and [others by twolfson][gittip-twolfson] via [gittip][gittip-twolfson].
 
 [![Support via Gittip][gittip-badge]][gittip-twolfson]
 
