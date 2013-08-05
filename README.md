@@ -45,10 +45,11 @@ The build process is tedious and questionably non-trivial.
 [pixlr]: http://pixlr.com/editor/
 
 ## Donating
-Donations are accepted via [Gittip][gittip-twolfson].
+Support this project and [others by twolfson][gittip-twolfson] via [gittip-twolfson][].
 
-[![Support via Gittip][badge]][gittip-twolfson]
+[![Support via Gittip][gittip-badge]][gittip-twolfson]
 
+[gittip-badge]: https://rawgithub.com/twolfson/gittip-badge/master/dist/gittip.png
 [gittip-twolfson]: https://www.gittip.com/twolfson/
 
 ## Contributing
