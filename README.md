@@ -1,11 +1,11 @@
 # gittip-badge
 
-GitHub styled badge for [Gittip][gittip]
+GitHub styled badge for [Gittip][]
 
-[![Gittip badge][badge]][badge]
+![Gittip badge][]
 
-[gittip]: https://www.gittip.com/
-[badge]: dist/gittip.png
+[Gittip]: https://www.gittip.com/
+[Gittip badge]: dist/gittip.png
 
 ## Usage
 To ensure you are using a stable badge, it is suggested you use a semver'd badge.
@@ -31,13 +31,7 @@ https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png
 ```
 
 ## Documentation
-The build process is tedious and questionably non-trivial.
-
-1. Work in your browser (suggested tools are [serve][] and [livereload][] for quick setup and iteration respectively)
-2. Enable a high constract background (e.g. `#F0F`)
-3. Take a screenshot of the image (suggested tool is [screenshot-as-a-service][screenshot])
-4. Crop and remove high contrast background from screenshot (suggested tool is [pixlr][])
-5. Disco!
+The latest image is located under `dist/gittip.png`.
 
 [serve]: https://npmjs.org/package/serve
 [livereload]: https://github.com/lepture/python-livereload
