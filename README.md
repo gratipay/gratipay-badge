@@ -13,21 +13,21 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 ### Markdown
 
 ```md
-[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png)](https://www.gittip.com/USERNAME/)
+[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/USERNAME/)
 ```
 
 ### HTML
 
 ```html
 <a href="https://www.gittip.com/USERNAME/">
-  <img alt="Support via Gittip" src="https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png"/>
+  <img alt="Support via Gittip" src="https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png"/>
 </a>
 ```
 
 ### Raw URL
 
 ```
-https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png
+https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png
 ```
 
 ## Documentation
