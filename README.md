@@ -31,12 +31,14 @@ https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png
 ```
 
 ## Documentation
-The latest image is located under `dist/gittip.png`.
+The latest image is located under `dist/gittip.png`. If you would like to build your own, run `build.sh`.
+
+You must have [PhantomJS][] and [pngcrush][] installed for the build script to work. We require [pngcrush][] since the output from [PhantomJS][] is approximately 12x larger.
+
+If you would like to adjust the image, you can find the HTML reference page in `lib/index.html`. It is suggested that you use [serve][] and [livereload][] to host and develop against the image.
 
 [serve]: https://npmjs.org/package/serve
 [livereload]: https://github.com/lepture/python-livereload
-[screenshot]: https://github.com/fzaninotto/screenshot-as-a-service
-[pixlr]: http://pixlr.com/editor/
 
 ## Donating
 Support this project and [others by twolfson][gittip-twolfson] via [gittip][gittip-twolfson].
