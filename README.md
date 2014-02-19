@@ -54,6 +54,12 @@ Support this project and [others by twolfson][gittip-twolfson] via [gittip][gitt
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## License
-Copyright (c) 2013 Todd Wolfson
+As of Feb 19 2014, Todd Wolfson has released this repository and its contents to the public domain.
 
-Licensed under the MIT license.
+It has been released under the [UNLICENSE][].
+
+[UNLICENSE]: UNLICENSE
+
+Previous to this, it was licensed under the [MIT license][].
+
+[MIT license]: https://github.com/twolfson/gittip-badge/blob/ee5cc0ad6573ef6e80048c7229bc1b7c01942b4c/README.md#license
