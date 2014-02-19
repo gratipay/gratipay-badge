@@ -37,6 +37,8 @@ You must have [PhantomJS][] and [pngcrush][] installed for the build script to w
 
 If you would like to adjust the image, you can find the HTML reference page in `lib/index.html`. It is suggested that you use [serve][] and [livereload][] to host and develop against the image.
 
+[PhantomJS]: http://phantomjs.org/
+[pngcrush]: http://pmt.sourceforge.net/pngcrush/
 [serve]: https://npmjs.org/package/serve
 [livereload]: https://github.com/lepture/python-livereload
 
