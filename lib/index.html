@@ -28,6 +28,7 @@
         html2canvas($button, {
           onrendered: function (canvas) {
             document.body.appendChild(canvas);
+            window.image = canvas.toDataURL();
           }
         });
       }());
