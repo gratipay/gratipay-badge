@@ -1,4 +1,4 @@
-body,input,select,textarea,button {
+body,input,select,textarea,button,.button {
 font: 13px Helvetica, arial, freesans, clean, sans-serif;
 line-height: 1.4
 }
@@ -13,9 +13,9 @@ line-height: 1.4
   text-shadow: 0 1px 0 rgba(255,255,255,0.9);
   white-space: nowrap;
   background-color: #eaeaea;
-  background-image: -moz-linear-gradient(#fafafa, #eaeaea);
-  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
-  background-image: linear-gradient(#fafafa, #eaeaea);
+  background-image: -moz-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: -webkit-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: linear-gradient(top, #fafafa, #eaeaea);
   background-repeat: repeat-x;
   border-radius: 3px;
   border: 1px solid #ddd;
@@ -36,9 +36,9 @@ line-height: 1.4
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
   background-color: #60b044;
-  background-image: -moz-linear-gradient(#8add6d, #60b044);
-  background-image: -webkit-linear-gradient(#8add6d, #60b044);
-  background-image: linear-gradient(#8add6d, #60b044);
+  background-image: -moz-linear-gradient(top, #8add6d, #60b044);
+  background-image: -webkit-linear-gradient(top, #8add6d, #60b044);
+  background-image: linear-gradient(top, #8add6d, #60b044);
   background-repeat: repeat-x;
   border-color: #5ca941
 }
