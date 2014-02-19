@@ -31,7 +31,7 @@ https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png
 ```
 
 ## Documentation
-The latest image is located under `dist/gittip.png`. If you would like to build your own, run `build.sh`.
+The latest image is located under `dist/gittip.png`. If you would like to build your own, run `./build.sh`.
 
 You must have [PhantomJS][] and [pngcrush][] installed for the build script to work. We require [pngcrush][] since the output from [PhantomJS][] is approximately 12x larger.
 
