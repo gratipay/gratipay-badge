@@ -1,11 +1,11 @@
-# gittip-badge
+# gratipay-badge
 
-GitHub styled badge for [Gittip][]
+GitHub styled badge for [Gratipay][]
 
-![Gittip badge][]
+![Gratipay badge][]
 
-[Gittip]: https://www.gittip.com/
-[Gittip badge]: dist/gittip.png
+[Gratipay]: https://www.gratipay.com/
+[Gratipay badge]: dist/gratipay.png
 
 ## Usage
 To ensure you are using a stable badge, it is suggested you use a semver'd badge.
@@ -13,25 +13,25 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 ### Markdown
 
 ```md
-[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/USERNAME/)
+[![Support via Gratipay](https://rawgithub.com/twolfson/gratipay-badge/1.0.0/dist/gratipay.png)](https://www.gratipay.com/USERNAME/)
 ```
 
 ### HTML
 
 ```html
-<a href="https://www.gittip.com/USERNAME/">
-  <img alt="Support via Gittip" src="https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png"/>
+<a href="https://www.gratipay.com/USERNAME/">
+  <img alt="Support via Gratipay" src="https://rawgithub.com/twolfson/gratipay-badge/1.0.0/dist/gratipay.png"/>
 </a>
 ```
 
 ### Raw URL
 
 ```
-https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png
+https://rawgithub.com/twolfson/gratipay-badge/1.0.0/dist/gratipay.png
 ```
 
 ## Documentation
-The latest image is located under `dist/gittip.png`. If you would like to build your own, run `./build.sh`.
+The latest image is located under `dist/gratipay.png`. If you would like to build your own, run `./build.sh`.
 
 You must have [PhantomJS][] and [pngcrush][] installed for the build script to work. We require [pngcrush][] since the output from [PhantomJS][] is approximately 12x larger.
 
@@ -43,12 +43,12 @@ If you would like to adjust the image, you can find the HTML reference page in `
 [livereload]: https://github.com/lepture/python-livereload
 
 ## Donating
-Support this project and [others by twolfson][gittip-twolfson] via [gittip][gittip-twolfson].
+Support this project and [others by twolfson][gratipay-twolfson] via [gratipay][gratipay-twolfson].
 
-[![Support via Gittip][gittip-badge]][gittip-twolfson]
+[![Support via Gratipay][gratipay-badge]][gratipay-twolfson]
 
-[gittip-badge]: https://rawgithub.com/twolfson/gittip-badge/master/dist/gittip.png
-[gittip-twolfson]: https://www.gittip.com/twolfson/
+[gratipay-badge]: https://rawgithub.com/twolfson/gratipay-badge/1.0.0/dist/gratipay.png
+[gratipay-twolfson]: https://www.gratipay.com/twolfson/
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style.
@@ -62,4 +62,4 @@ It has been released under the [UNLICENSE][].
 
 Previous to this, it was licensed under the [MIT license][].
 
-[MIT license]: https://github.com/twolfson/gittip-badge/blob/ee5cc0ad6573ef6e80048c7229bc1b7c01942b4c/README.md#license
+[MIT license]: https://github.com/twolfson/gratipay-badge/blob/ee5cc0ad6573ef6e80048c7229bc1b7c01942b4c/README.md#license
