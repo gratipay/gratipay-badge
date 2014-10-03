@@ -1,6 +1,6 @@
-# gratipay-badge changelog
+# gittip-badge changelog
 
-1.0.0 - Initial gratipay release
+1.0.0 - Moved button content from "Gittip" to "Gratipay"
 
 0.2.1 - Moved from MIT license to UNLICENSE
 
