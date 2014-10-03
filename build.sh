@@ -6,3 +6,4 @@ phantomjs lib/gratipay-badge.js
 mkdir tmp/
 mv dist/gratipay.png tmp/
 pngcrush tmp/gratipay.png dist/gratipay.png
+cp dist/gratipay.png dist/gittip.png
