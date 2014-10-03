@@ -6,6 +6,11 @@ set -x
 # Generate our badge
 phantomjs lib/gittip-badge.js
 
+# If there is a tmp/ directory, clean it out
+if test -d tmp/; then
+  rm -r tmp/
+fi
+
 # Minify the badge content
 mkdir tmp/
 mv dist/gratipay.png tmp/
