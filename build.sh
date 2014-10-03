@@ -4,7 +4,7 @@ set -e
 set -x
 
 # Generate our badge
-phantomjs lib/gratipay-badge.js
+phantomjs lib/gittip-badge.js
 
 # Minify the badge content
 mkdir tmp/
