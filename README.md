@@ -13,21 +13,21 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 ### Markdown
 
 ```md
-[![Support via Gratipay](https://cdn.rawgit.com/twolfson/gittip-badge/1.0.0/dist/gratipay.png)](https://www.gratipay.com/USERNAME/)
+[![Support via Gratipay](https://cdn.rawgit.com/twolfson/gittip-badge/1.1.0/dist/gratipay.png)](https://www.gratipay.com/USERNAME/)
 ```
 
 ### HTML
 
 ```html
 <a href="https://www.gratipay.com/USERNAME/">
-  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/twolfson/gittip-badge/1.0.0/dist/gratipay.png"/>
+  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/twolfson/gittip-badge/1.1.0/dist/gratipay.png"/>
 </a>
 ```
 
 ### Raw URL
 
 ```
-https://cdn.rawgit.com/twolfson/gittip-badge/1.0.0/dist/gratipay.png
+https://cdn.rawgit.com/twolfson/gittip-badge/1.1.0/dist/gratipay.png
 ```
 
 ## Documentation
@@ -47,7 +47,7 @@ Support this project and [others by twolfson][gratipay-twolfson] via [gratipay][
 
 [![Support via Gratipay][gittip-badge]][gratipay-twolfson]
 
-[gittip-badge]: https://cdn.rawgit.com/twolfson/gittip-badge/1.0.0/dist/gratipay.png
+[gittip-badge]: https://cdn.rawgit.com/twolfson/gittip-badge/1.1.0/dist/gratipay.png
 [gratipay-twolfson]: https://www.gratipay.com/twolfson/
 
 ## Contributing
