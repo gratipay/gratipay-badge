@@ -1,4 +1,8 @@
 #!/bin/bash
+# Echo out commands and exit on first failure
+set -e
+set -x
+
 # Generate our badge
 phantomjs lib/gratipay-badge.js
 
