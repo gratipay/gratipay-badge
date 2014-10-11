@@ -12,7 +12,7 @@ In the future, we hope to leverage tools like `twolfson/foundry` to make the rel
 
 4. Commit changes with message "Release {{semver}}"
     ```sh
-    git commit -m "Release {{semver}}
+    git commit -m "Release {{semver}}"
     ```
 
 5. `git tag` with version
