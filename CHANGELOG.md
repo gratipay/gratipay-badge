@@ -1,4 +1,4 @@
-# gittip-badge changelog
+# gratipay-badge changelog
 1.1.1 - Robustified build script with echoes, early exits, and typos for filenames
 
 1.1.0 - Updated README to point to `cdn.rawgit.com` over `rawgithub.com`
