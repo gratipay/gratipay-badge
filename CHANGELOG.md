@@ -1,4 +1,6 @@
 # gratipay-badge changelog
+2.0.1 - Added documentation for minor branches, patch branches, and releasing
+
 2.0.0 - Transferred to `gratipay` organization and renamed to `gratipay-badge`
 
 1.1.2 - Re-merged missing changes from 1.1.1
