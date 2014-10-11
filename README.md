@@ -30,6 +30,17 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 https://cdn.rawgit.com/gratipay/gratipay-badge/2.0.0/dist/gratipay.png
 ```
 
+### Minor and patch releases
+As of `2.0.0`, we offer variable minor and patch branches. For example, if you would like `gratipay-badge@2` but would like backwards compatible changes in the future, then you can use `2.x.x` over `2.0.0`.
+
+```
+// Allow minor updates
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.x.x/dist/gratipay.png
+
+// Allow patch updates
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.0.x/dist/gratipay.png
+```
+
 ## Documentation
 The latest image is located under `dist/gratipay.png`. If you would like to build your own, run `./build.sh`.
 
