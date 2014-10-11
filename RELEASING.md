@@ -16,37 +16,40 @@ In the future, we hope to leverage tools like `twolfson/foundry` to make the rel
     ```
 
 5. `git tag` with version
-    - @twolfson prefers to use `twolfson/foundry` for these past 2 steps
     ```sh
     git tag {{semver}}
     ```
 
-6. Publish `master` branch
+6. @twolfson prefers to use [`twolfson/foundry`][] for these past 2 steps
+
+7. Publish `master` branch
     ```sh
     git push origin master
     ```
 
-7. Publish tag
+8. Publish tag
     ```sh
     git push --tags
     ```
 
-8. Overwrite variable minor semver branch (e.g. `2.0.0` -> `2.x.x`)
+9. Overwrite variable minor semver branch (e.g. `2.0.0` -> `2.x.x`)
     ```sh
     git checkout -B {{variable-minor-semver}}
     ```
 
-9. Publish branch
+10. Publish branch
     ```sh
     git push origin {{variable-minor-semver}} --force
     ```
 
-8. Overwrite variable patch semver branch (e.g. `2.0.0` -> `2.0.x`)
+11. Overwrite variable patch semver branch (e.g. `2.0.0` -> `2.0.x`)
     ```sh
     git checkout -B {{variable-patch-semver}}
     ```
 
-9. Publish branch
+12. Publish branch
     ```sh
     git push origin {{variable-patch-semver}} --force
     ```
+
+[`twolfson/foundry`]: https://github.com/twolfson/foundry
