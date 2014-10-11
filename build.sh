@@ -4,7 +4,7 @@ set -e
 set -x
 
 # Generate our badge
-phantomjs lib/gittip-badge.js
+phantomjs lib/gratipay-badge.js
 
 # If there is a tmp/ directory, clean it out
 if test -d tmp/; then
