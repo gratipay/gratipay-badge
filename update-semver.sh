@@ -11,5 +11,5 @@ fi
 
 # Grab the last semver
 last_semver="$(git tag | sort -V | tail -n 1)"
-last_minor_variable="$($last_semver | sed "s/(\d+\.\d+\.)\d+/\$1x)/")"
-last_patch_variable="
+last_minor_branch="$(echo $last_semver | sed -r "s/[0-9]+\./x/")"
+last_patch_branch=""
