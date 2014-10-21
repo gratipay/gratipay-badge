@@ -3,7 +3,11 @@
 
 In the future, we hope to leverage tools like `twolfson/foundry` to make the release a 1 step process.
 
-1. Update `README.md` to point to latest semver for all URLs.
+1. Update `README.md` to point to latest semver for all URLs. This has been automated with `update-semver.sh`
+    ```sh
+    ./update-semver.sh {{semver}}
+    ```
+
 2. Add update notes to `CHANGELOG.md`
 3. Stage changes
     ```sh
