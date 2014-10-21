@@ -9,7 +9,16 @@ if which gsort > /dev/null; then
   alias sort="gsort"
 fi
 
-# Grab the last semver
+# If there is no semver provided, complain and leave
+semver="$1"
+if test "$semver" = ""; then
+  echo "No \`$semver\` was provided to \`update-semver.sh\`. Please provide one (e.g. \`./update-semver.sh 1.2.3\`" 1>&2
+  exit 1
+fi
+
+# Grab the last semver and its branches (1.2.3 -> 1.x.x, 1.2.x)
 last_semver="$(git tag | sort -V | tail -n 1)"
-last_minor_branch="$(echo $last_semver | sed -r "s/([0-9]+\.[0-9]+\.)[0-9]+/\1x/")"
-last_patch_branch=""
+last_minor_branch="$(echo $last_semver | sed -r "s/([0-9]+)\.([0-9]+)\.[0-9]+/\1.x.x/")"
+last_patch_branch="$(echo $last_semver  | sed -r "s/([0-9]+)\.([0-9]+)\.[0-9]+/\1.\2.x/")"
+
+#
