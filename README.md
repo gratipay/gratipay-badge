@@ -61,9 +61,6 @@ Support this project and [others by twolfson][gratipay-twolfson] via [gratipay][
 [gratipay]: https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.1/dist/gratipay.png
 [gratipay-twolfson]: https://gratipay.com/twolfson/
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style.
-
 ## License
 As of Feb 19 2014, Todd Wolfson has released this repository and its contents to the public domain.
 
