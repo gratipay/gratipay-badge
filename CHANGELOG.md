@@ -1,4 +1,6 @@
 # gratipay-badge changelog
+2.1.2 - Added `CONTRIBUTING.md`
+
 2.1.1 - Created `update-semver.sh` to make semver updates easier
 
 2.1.0 - Updated `gratipay` URL to be `www.` free. Via @whit537 in #8
