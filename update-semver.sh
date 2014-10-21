@@ -21,4 +21,11 @@ last_semver="$(git tag | sort -V | tail -n 1)"
 last_minor_branch="$(echo $last_semver | sed -r "s/([0-9]+)\.([0-9]+)\.[0-9]+/\1.x.x/")"
 last_patch_branch="$(echo $last_semver  | sed -r "s/([0-9]+)\.([0-9]+)\.[0-9]+/\1.\2.x/")"
 
-#
+# Calculate the new branches
+minor_branch="$(echo $semver | sed -r "s/([0-9]+)\.([0-9]+)\.[0-9]+/\1.x.x/")"
+patch_branch="$(echo $semver  | sed -r "s/([0-9]+)\.([0-9]+)\.[0-9]+/\1.\2.x/")"
+
+# Replace all instances in the README
+sed --in-place "s/$last_semver/$semver/g" README.md
+sed --in-place "s/$last_minor_branch/$minor_branch/g" README.md
+sed --in-place "s/$last_patch_branch/$patch_branch/g" README.md
