@@ -1,4 +1,6 @@
 # gratipay-badge changelog
+2.1.0 - Updated `gratipay` URL to be `www.` free. Via @whit537 in #8
+
 2.0.1 - Added documentation for minor branches, patch branches, and releasing
 
 2.0.0 - Transferred to `gratipay` organization and renamed to `gratipay-badge`
