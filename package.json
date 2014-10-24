@@ -1,0 +1,34 @@
+{
+  "name": "gratipay-badge",
+  "description": "GitHub styled badge for Gratipay",
+  "version": "2.1.2",
+  "homepage": "https://github.com/gratipay/gratipay-badge",
+  "author": {
+    "name": "Todd Wolfson",
+    "email": "todd@twolfson.com",
+    "url": "http://twolfson.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gratipay/gratipay-badge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gratipay/gratipay-badge/issues"
+  },
+  "licenses": [
+    {
+      "type": "UNLICENSE",
+      "url": "https://github.com/gratipay/gratipay-badge/blob/master/UNLICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+  },
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "keywords": [],
+  "private": true
+}
