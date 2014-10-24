@@ -24,10 +24,12 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {},
   "devDependencies": {
+    "foundry": "~3.0.0",
+    "foundry-release-git": "~1.1.0",
+    "foundry-release-npm": "~1.1.0"
   },
   "keywords": [],
   "private": true
