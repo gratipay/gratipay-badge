@@ -39,8 +39,8 @@
           var $svgContainer = document.createElement('div');
           $svgContainer.innerHTML = svg;
           document.body.appendChild($svgContainer);
-
           // Save the image for consumption by PhantomJS
+          console.log(svg);
           window.image = svg;
         }());
       </script>
