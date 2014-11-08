@@ -3,7 +3,7 @@
 set -e
 set -x
 
-# Generate our badge
+# Generate our PNG badge
 phantomjs lib/gratipay-badge.js
 
 # If there is a tmp/ directory, clean it out
@@ -11,8 +11,11 @@ if test -d tmp/; then
   rm -r tmp/
 fi
 
-# Minify the badge content
+# Minify the PNG content
 mkdir tmp/
 mv dist/gratipay.png tmp/
 pngcrush tmp/gratipay.png dist/gratipay.png
 cp dist/gratipay.png dist/gittip.png
+
+# Minify the SVG content
+npm run optimize:svg
