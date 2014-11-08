@@ -1,7 +1,7 @@
 {
   "name": "gratipay-badge",
   "description": "GitHub styled badge for Gratipay",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "homepage": "https://github.com/gratipay/gratipay-badge",
   "author": {
     "name": "Todd Wolfson",
