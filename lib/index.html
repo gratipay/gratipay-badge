@@ -25,11 +25,15 @@
         <span style="line-height: 30px; margin-left: 7px; font-size: 1.1em;">Support via Gratipay</span>
       </button>
     </p>
-    <h3>SVG original</h3>
+    <h3>SVG output</h3>
     <p>
-      <svg>
-        <use xlink:href="gratipay.svg#hai"></use>
-      </svg>
+      <script src="vendor/domvas.js"></script>
+      <script>
+        (function () {
+          var $button = document.getElementById('button');
+          console.log(domvas.toImage($button));
+        }());
+      </script>
     </p>
     <h3>Canvas output</h3>
     <script src="vendor/html2canvas.js"></script>
