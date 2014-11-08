@@ -24,9 +24,7 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "scripts": {
-    "optimize:svg": "svgo lib/gratipay.svg dist/gratipay.svg"
-  },
+  "scripts": {},
   "dependencies": {},
   "devDependencies": {
     "foundry": "~3.0.0",

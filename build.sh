@@ -18,4 +18,6 @@ pngcrush tmp/gratipay.png dist/gratipay.png
 cp dist/gratipay.png dist/gittip.png
 
 # Minify the SVG content
-npm run optimize:svg
+# DEV: We should use `npm-run-script` but this is more straightforward to those unfamiliar with `npm`
+./node_modules/.bin/svgo --disable convertPathData --input lib/gratipay.svg --output dist/gratipay.svg
+
