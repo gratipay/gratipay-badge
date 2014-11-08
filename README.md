@@ -2,7 +2,7 @@
 
 GitHub styled badge for [Gratipay][]
 
-PNG: ![Gratipay badge][] SVG: ![Gratipay badge][svg-badge]
+![Gratipay badge][svg-badge]
 
 [Gratipay]: https://gratipay.com/
 [Gratipay badge]: dist/gratipay.png
