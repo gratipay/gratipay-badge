@@ -31,27 +31,33 @@
       <script src="vendor/domvas.js"></script>
       <script>
         (function () {
+          // Load the image into its SVG equivalent
           var $button = document.getElementById('button');
-          var $svg = document.createElement('div');
-          $svg.innerHTML = domvas.toImage($button);
-          console.log($svg);
-          document.body.appendChild($svg);
+          var svg = domvas.toImage($button);
+
+          // Output the image for debugging
+          var $svgContainer = document.createElement('div');
+          $svgContainer.innerHTML = svg;
+          document.body.appendChild($svgContainer);
+
+          // Save the image for consumption by PhantomJS
+          window.image = svg;
         }());
       </script>
     </p>
     <h3>Canvas output</h3>
     <script src="vendor/html2canvas.js"></script>
     <script>
-      (function () {
-        var $button = document.getElementById('button');
-        window.$button = $button;
-        html2canvas($button, {
-          onrendered: function (canvas) {
-            document.body.appendChild(canvas);
-            window.image = canvas.toDataURL();
-          }
-        });
-      }());
+      // (function () {
+      //   var $button = document.getElementById('button');
+      //   window.$button = $button;
+      //   html2canvas($button, {
+      //     onrendered: function (canvas) {
+      //       document.body.appendChild(canvas);
+      //       window.image = canvas.toDataURL();
+      //     }
+      //   });
+      // }());
     </script>
   </body>
 
