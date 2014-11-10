@@ -22,36 +22,43 @@
     </p>
     <h3>SVG output</h3>
     <p>
-      <script src="vendor/domvas.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="vendor/jquery.js"></script>
+      <script src="vendor/microtemplatez.js"></script>
       <script>
         (function () {
           // Get properties of HTML/CSS
           var $button = $('#button');
-          var widthPx = $button.css('width');
-          var width = widthPx.replace('px', '');
-          var heightPx = $button.css('height');
-          var height = heightPx.replace('px', '');
-
-          // TODO: Automate parsing
-          // -moz-linear-gradient(50% 0%, rgb(138, 221, 109), rgb(96, 176, 68))
-          var gradientStartPosition = '50%';
-          var gradientStopPosition = '0%';
-          var gradientStartColor = 'rgb(138, 221, 109)';
-          var gradientStopColor = 'rgb(96, 176, 68)';
-
           var $span = $button.find('span');
-          var fontFamily = $span.css('font-family');
-          var fontSize = $span.css('font-size');
-          var fontWeight = $span.css('font-weight');
-          var text = $span.text();
+          var data = {
+            px: {
+              width: $button.css('width'),
+              height: $button.css('height')
+            },
+            width: $button.css('width').replace('px', ''),
+            height: $button.css('height').replace('px', '')
+
+            background: {
+              // $button.css('background-image')
+              // TODO: Automate parsing
+              // -moz-linear-gradient(50% 0%, rgb(138, 221, 109), rgb(96, 176, 68))
+              startPosition: '50%',
+              stopPosition: '0%',
+              startColor: 'rgb(138, 221, 109)',
+              stopColor: 'rgb(96, 176, 68)'
+            }
+
+            fontFamily: $span.css('font-family'),
+            fontSize: $span.css('font-size'),
+            fontWeight: $span.css('font-weight'),
+            text: $span.text()
+          };
 
           // Render SVG based on properties
-          var svg = [
+          var svgTemplate = [
             '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
             // '<svg width="188px" height="52px" viewBox="0 0 188 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">',
             // TODO: Do we need sketch and other ns?
-            '<svg width="' + widthPx + '" height="' + heightPx + '" viewBox="0 0 ' + width + ' ' + height + '" version="1.1" ',
+            '<svg width="{{px.width}}" height="{{px.height}}" viewBox="0 0 {{width}} {{height}}" version="1.1" ',
               'xmlns="http://www.w3.org/2000/svg">',
                 '<defs>',
                     // '<linearGradient x1="48.1995668%" y1="3.2498%" x2="48.1995668%" y2="99.6574%" id="linearGradient-1">',
@@ -105,6 +112,7 @@
                 '</g>',
             '</svg>'
           ].join('');
+          var svg = window.templatez(svgTemplate, data);
 
           // Output the image for debugging
           var $svg = document.createElement('img');
