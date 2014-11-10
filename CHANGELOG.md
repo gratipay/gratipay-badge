@@ -1,4 +1,8 @@
 # gratipay-badge changelog
+2.1.5 - Upgraded `semver-branches` to fix keyword release issue
+
+2.1.4 - Added `foundry-release-git-semver-branches` to manage semver variable branches (e.g. `2.x.x` `2.3.x`)
+
 2.1.3 - Added `foundry` and plugins to make releasing easier
 
 2.1.2 - Added `CONTRIBUTING.md`

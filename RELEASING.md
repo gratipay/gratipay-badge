@@ -22,7 +22,7 @@ Currently, we require you have `git` and `node>=0.8.0` installed.
     git add -p
     ```
 
-4. Commit to `git`, tag `git`, push commit, push `tags` via `foundry`.
+4. Commit to `git`, tag `git`, push commit, push `tags`, update/create semver branches (e.g. `2.x.x` for `2.0.x`), push semver branches via `foundry`.
     ```sh
     # If we haven't installed `foundry` and our plugins, do so
     if test -x node_modules/.bin/foundry; then
@@ -55,24 +55,29 @@ Currently, we require you have `git` and `node>=0.8.0` installed.
         git push --tags
         ```
 
-9. Overwrite variable minor semver branch (e.g. `2.0.0` -> `2.x.x`)
-    ```sh
-    git checkout -B {{variable-minor-semver}}
-    ```
+    6. Overwrite variable minor semver branch (e.g. `2.0.0` -> `2.x.x`)
+        ```sh
+        git checkout -B {{variable-minor-semver}}
+        ```
 
-10. Publish branch
-    ```sh
-    git push origin {{variable-minor-semver}} --force
-    ```
+    7. Publish branch
+        ```sh
+        git push origin {{variable-minor-semver}}
+        ```
 
-11. Overwrite variable patch semver branch (e.g. `2.0.0` -> `2.0.x`)
-    ```sh
-    git checkout -B {{variable-patch-semver}}
-    ```
+    8. Overwrite variable patch semver branch (e.g. `2.0.0` -> `2.0.x`)
+        ```sh
+        git checkout -B {{variable-patch-semver}}
+        ```
 
-12. Publish branch
-    ```sh
-    git push origin {{variable-patch-semver}} --force
-    ```
+    9. Publish branch
+        ```sh
+        git push origin {{variable-patch-semver}}
+        ```
+
+    10. Return to `master`
+        ```sh
+        git checkout master
+        ```
 
 [`twolfson/foundry`]: https://github.com/twolfson/foundry
