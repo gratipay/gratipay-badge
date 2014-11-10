@@ -77,8 +77,11 @@
         '<g id="gratipay" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)">',
             '<g id="gittip" sketch:type="MSShapeGroup">',
                 '<g id="layer1" transform="translate(-0.500000, 0.125000)">',
-                    '<rect id="rect2987" stroke="#5CA941" fill="url(#linearGradient-1)" x="0" y="0" width="' + width + '" height="' + height + '" rx="3"></rect>',
-                    '<path d="M26.95513,10.56585 C18.98364,10.56585 12.521,17.02855 12.521,25.00005 ',
+                    // Button
+                    '<rect id="rect2987" stroke="#5CA941" fill="url(#linearGradient-1)" x="0" y="0" width="' + (width - 1) + '" height="' + (height - 1) + '" rx="3"></rect>',
+                    // Gratipay heart
+                    '<path d="',
+                      'M26.95513,10.56585 C18.98364,10.56585 12.521,17.02855 12.521,25.00005 ',
                       'C12.521,32.97255 18.98364,39.43415 26.95513,39.43415 C34.92855,39.43415 ',
                       '41.38927,32.97255 41.38927,25.00005 C41.38927,17.02855 34.92855,10.56585 ',
                       '26.95513,10.56585 L26.95513,10.56585 Z ',
@@ -88,9 +91,11 @@
                       '32.82501,19.56315 C34.73224,20.82085 34.19818,23.09475 33.64295,23.74905 ',
                       'L27.07542,32.65015 L20.50789,23.74905 C19.95265,23.09475 19.39453,20.82085 ',
                       '21.30176,19.56315 C21.91089,19.16155 22.50604,19.02265 23.05792,19.05805 ',
-                      'L23.05792,19.05805 Z" id="path46" fill="#FFFFFF"></path>',
+                      'L23.05792,19.05805 Z',
+                      '" id="path46" fill="#FFFFFF"></path>',
                 '</g>',
             '</g>',
+            // Text
             '<text id="Support-via-Gratipay" fill="white" filter="url(#filter-2)" sketch:type="MSTextLayer" font-family="Helvetica" font-size="12.5" font-weight="bold">',
                 '<tspan x="50" y="28" fill="#FFFFFF">Support via Gratipay</tspan>',
             '</text>',
