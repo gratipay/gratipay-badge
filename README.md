@@ -17,13 +17,13 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 **PNG:**
 
 ```md
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.png)](https://gratipay.com/USERNAME/)
+[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.png)](https://gratipay.com/USERNAME/)
 ```
 
 **SVG:**
 
 ```md
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.svg)](https://gratipay.com/USERNAME/)
+[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.svg)](https://gratipay.com/USERNAME/)
 ```
 
 ### HTML
@@ -31,7 +31,7 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 
 ```html
 <a href="https://gratipay.com/USERNAME/">
-  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.png"/>
+  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.png"/>
 </a>
 ```
 
@@ -39,7 +39,7 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 
 ```html
 <a href="https://gratipay.com/USERNAME/">
-  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.svg"/>
+  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.svg"/>
 </a>
 ```
 
@@ -47,17 +47,17 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 **PNG:**
 
 ```
-https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.png
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.png
 ```
 
 **SVG:**
 
 ```
-https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.svg
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.svg
 ```
 
 ### Minor and patch releases
-As of `2.0.0`, we offer variable minor and patch branches. For example, if you would like `gratipay-badge@2` but would like backwards compatible changes in the future, then you can use `2.x.x` over `2.1.5`.
+As of `2.0.0`, we offer variable minor and patch branches. For example, if you would like `gratipay-badge@2` but would like backwards compatible changes in the future, then you can use `2.x.x` over `2.2.0`.
 
 **PNG:**
 
@@ -66,14 +66,14 @@ As of `2.0.0`, we offer variable minor and patch branches. For example, if you w
 https://cdn.rawgit.com/gratipay/gratipay-badge/2.x.x/dist/gratipay.png
 
 // Allow patch updates
-https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.x/dist/gratipay.png
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.x/dist/gratipay.png
 ```
 
 **SVG:**
 
 ```
 https://cdn.rawgit.com/gratipay/gratipay-badge/2.x.x/dist/gratipay.svg
-https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.x/dist/gratipay.svg
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.x/dist/gratipay.svg
 ```
 
 ## Documentation
@@ -93,7 +93,7 @@ Support this project and [others by twolfson][gratipay-twolfson] via [gratipay][
 
 [![Support via Gratipay][gratipay]][gratipay-twolfson]
 
-[gratipay]: https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.png
+[gratipay]: https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.png
 [gratipay-twolfson]: https://gratipay.com/twolfson/
 
 ## License
