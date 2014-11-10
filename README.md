@@ -2,47 +2,82 @@
 
 GitHub styled badge for [Gratipay][]
 
-![Gratipay badge][]
+PNG: ![Gratipay badge][] SVG: ![Gratipay badge][svg-badge]
+
+> Rendering discrepencies are hoping to be addressed in https://github.com/gratipay/gratipay-badge/issues/10
 
 [Gratipay]: https://gratipay.com/
 [Gratipay badge]: dist/gratipay.png
+[svg-badge]: http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg
 
 ## Usage
 To ensure you are using a stable badge, it is suggested you use a semver'd badge.
 
 ### Markdown
+**PNG:**
 
 ```md
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.png)](https://gratipay.com/USERNAME/)
+[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.png)](https://gratipay.com/USERNAME/)
+```
+
+**SVG:**
+
+```md
+[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.svg)](https://gratipay.com/USERNAME/)
 ```
 
 ### HTML
+**PNG:**
 
 ```html
 <a href="https://gratipay.com/USERNAME/">
-  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.png"/>
+  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.png"/>
+</a>
+```
+
+**SVG:**
+
+```html
+<a href="https://gratipay.com/USERNAME/">
+  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.svg"/>
 </a>
 ```
 
 ### Raw URL
+**PNG:**
 
 ```
-https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.png
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.png
+```
+
+**SVG:**
+
+```
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.svg
 ```
 
 ### Minor and patch releases
-As of `2.0.0`, we offer variable minor and patch branches. For example, if you would like `gratipay-badge@2` but would like backwards compatible changes in the future, then you can use `2.x.x` over `2.1.3`.
+As of `2.0.0`, we offer variable minor and patch branches. For example, if you would like `gratipay-badge@2` but would like backwards compatible changes in the future, then you can use `2.x.x` over `2.2.0`.
+
+**PNG:**
 
 ```
 // Allow minor updates
 https://cdn.rawgit.com/gratipay/gratipay-badge/2.x.x/dist/gratipay.png
 
 // Allow patch updates
-https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.x/dist/gratipay.png
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.x/dist/gratipay.png
+```
+
+**SVG:**
+
+```
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.x.x/dist/gratipay.svg
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.x/dist/gratipay.svg
 ```
 
 ## Documentation
-The latest image is located under `dist/gratipay.png`. If you would like to build your own, run `./build.sh`.
+The latest images are located under `dist/gratipay.png` and `dist/gratipay.svg`. If you would like to build your own, run `./build.sh`.
 
 You must have [PhantomJS][] and [pngcrush][] installed for the build script to work. We require [pngcrush][] since the output from [PhantomJS][] is approximately 12x larger.
 
@@ -58,7 +93,7 @@ Support this project and [others by twolfson][gratipay-twolfson] via [gratipay][
 
 [![Support via Gratipay][gratipay]][gratipay-twolfson]
 
-[gratipay]: https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.png
+[gratipay]: https://cdn.rawgit.com/gratipay/gratipay-badge/2.2.0/dist/gratipay.png
 [gratipay-twolfson]: https://gratipay.com/twolfson/
 
 ## License
