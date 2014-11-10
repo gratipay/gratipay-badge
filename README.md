@@ -23,7 +23,7 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 **SVG:**
 
 ```md
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.svg)](https://gratipay.com/USERNAME/)
+[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.svg)](https://gratipay.com/USERNAME/)
 ```
 
 ### HTML
@@ -39,7 +39,7 @@ To ensure you are using a stable badge, it is suggested you use a semver'd badge
 
 ```html
 <a href="https://gratipay.com/USERNAME/">
-  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.svg"/>
+  <img alt="Support via Gratipay" src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.svg"/>
 </a>
 ```
 
@@ -53,7 +53,7 @@ https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.png
 **SVG:**
 
 ```
-https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.3/dist/gratipay.svg
+https://cdn.rawgit.com/gratipay/gratipay-badge/2.1.5/dist/gratipay.svg
 ```
 
 ### Minor and patch releases
