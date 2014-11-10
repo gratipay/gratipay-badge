@@ -2,10 +2,11 @@
 
 GitHub styled badge for [Gratipay][]
 
-![Gratipay badge][]
+PNG: ![Gratipay badge][] SVG: ![Gratipay badge][svg-badge]
 
 [Gratipay]: https://gratipay.com/
-[Gratipay badge]: http://rawgit.com/gratipay/gratipay-badge/dev/optimize-svg/dist/gratipay.svg
+[Gratipay badge]: dist/gratipay.png
+[svg-badge]: http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg
 
 ## Usage
 To ensure you are using a stable badge, it is suggested you use a semver'd badge.
