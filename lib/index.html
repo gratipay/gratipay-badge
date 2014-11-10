@@ -32,110 +32,109 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script>
         (function () {
-          // Load the image into its SVG equivalent
+          // Get properties of HTML/CSS
           var $button = $('#button');
           var widthPx = $button.css('width');
           var width = widthPx.replace('px', '');
           var heightPx = $button.css('height');
           var height = heightPx.replace('px', '');
-          // var gradient = $button.css('background-image');
+
           // TODO: Automate parsing
           // -moz-linear-gradient(50% 0%, rgb(138, 221, 109), rgb(96, 176, 68))
           var gradientStartPosition = '50%';
           var gradientStopPosition = '0%';
           var gradientStartColor = 'rgb(138, 221, 109)';
           var gradientStopColor = 'rgb(96, 176, 68)';
+
           var $span = $button.find('span');
           var fontFamily = $span.css('font-family');
           var fontSize = $span.css('font-size');
           var fontWeight = $span.css('font-weight');
           var text = $span.text();
-          // var $button = document.getElementById('button');
-          // var svg = domvas.toImage($button);
-          console.log(widthPx, heightPx);
 
+          // Render SVG based on properties
           var svg = [
-'<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
-// '<svg width="188px" height="52px" viewBox="0 0 188 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">',
-// TODO: Do we need sketch and other ns?
-'<svg width="' + widthPx + '" height="' + heightPx + '" viewBox="0 0 ' + width + ' ' + height + '" version="1.1" ',
-  'xmlns="http://www.w3.org/2000/svg">',
-    '<defs>',
-        // '<linearGradient x1="48.1995668%" y1="3.2498%" x2="48.1995668%" y2="99.6574%" id="linearGradient-1">',
-        '<linearGradient x1="' + gradientStartPosition + '" y1="0%" x2="' + gradientStopPosition + '%" y2="100%" id="linearGradient-1">',
-            // '<stop stop-color="#8ADD6D" offset="0%"></stop>',
-            // '<stop stop-color="#60B044" offset="100%"></stop>',
-            '<stop stop-color="' + gradientStartColor + '" offset="0%"></stop>',
-            '<stop stop-color="' + gradientStopColor + '" offset="100%"></stop>',
-        '</linearGradient>',
-        // TODO: Is there a simpler way to define text shadow in SVG?
-        '<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">',
-            '<feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>',
-            '<feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>',
-            '<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" ',
-              'type="matrix" result="shadowMatrixOuter1"></feColorMatrix>',
-            '<feMerge>',
-                '<feMergeNode in="shadowMatrixOuter1"></feMergeNode>',
-                '<feMergeNode in="SourceGraphic"></feMergeNode>',
-            '</feMerge>',
-        '</filter>',
-    '</defs>',
-    '<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">',
-        '<g id="gratipay" transform="translate(1.000000, 1.000000)">',
-            '<g id="gittip">',
-                '<g id="layer1" transform="translate(-0.500000, 0.125000)">',
-                    // Button
-                    '<rect id="rect2987" stroke="#5CA941" fill="url(#linearGradient-1)" x="0" y="0" ',
-                      'width="' + (width - 1) + '" height="' + (height - 1) + '" rx="3"></rect>',
-                    // Gratipay heart
-                    '<path d="',
-                      'M26.95513,10.56585 C18.98364,10.56585 12.521,17.02855 12.521,25.00005 ',
-                      'C12.521,32.97255 18.98364,39.43415 26.95513,39.43415 C34.92855,39.43415 ',
-                      '41.38927,32.97255 41.38927,25.00005 C41.38927,17.02855 34.92855,10.56585 ',
-                      '26.95513,10.56585 L26.95513,10.56585 Z ',
-                      'M23.05792,19.05805 C23.97771,19.11705 24.76596,19.67325 25.27115,20.26085 ',
-                      'C25.57331,20.61115 26.10063,21.00655 27.07542,21.00655 C28.05213,21.00655 ',
-                      '28.55444,20.61115 28.85563,20.26085 C29.66394,19.32065 31.20069,18.49215 ',
-                      '32.82501,19.56315 C34.73224,20.82085 34.19818,23.09475 33.64295,23.74905 ',
-                      'L27.07542,32.65015 L20.50789,23.74905 C19.95265,23.09475 19.39453,20.82085 ',
-                      '21.30176,19.56315 C21.91089,19.16155 22.50604,19.02265 23.05792,19.05805 ',
-                      'L23.05792,19.05805 Z',
-                      '" id="path46" fill="#FFFFFF"></path>',
+            '<?xml version="1.0" encoding="UTF-8" standalone="no"?>',
+            // '<svg width="188px" height="52px" viewBox="0 0 188 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">',
+            // TODO: Do we need sketch and other ns?
+            '<svg width="' + widthPx + '" height="' + heightPx + '" viewBox="0 0 ' + width + ' ' + height + '" version="1.1" ',
+              'xmlns="http://www.w3.org/2000/svg">',
+                '<defs>',
+                    // '<linearGradient x1="48.1995668%" y1="3.2498%" x2="48.1995668%" y2="99.6574%" id="linearGradient-1">',
+                    '<linearGradient x1="' + gradientStartPosition + '" y1="0%" x2="' + gradientStopPosition + '%" y2="100%" id="linearGradient-1">',
+                        // '<stop stop-color="#8ADD6D" offset="0%"></stop>',
+                        // '<stop stop-color="#60B044" offset="100%"></stop>',
+                        '<stop stop-color="' + gradientStartColor + '" offset="0%"></stop>',
+                        '<stop stop-color="' + gradientStopColor + '" offset="100%"></stop>',
+                    '</linearGradient>',
+                    // TODO: Is there a simpler way to define text shadow in SVG?
+                    '<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">',
+                        '<feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>',
+                        '<feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>',
+                        '<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" ',
+                          'type="matrix" result="shadowMatrixOuter1"></feColorMatrix>',
+                        '<feMerge>',
+                            '<feMergeNode in="shadowMatrixOuter1"></feMergeNode>',
+                            '<feMergeNode in="SourceGraphic"></feMergeNode>',
+                        '</feMerge>',
+                    '</filter>',
+                '</defs>',
+                '<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">',
+                    '<g id="gratipay" transform="translate(1.000000, 1.000000)">',
+                        '<g id="gittip">',
+                            '<g id="layer1" transform="translate(-0.500000, 0.125000)">',
+                                // Button
+                                '<rect id="rect2987" stroke="#5CA941" fill="url(#linearGradient-1)" x="0" y="0" ',
+                                  'width="' + (width - 1) + '" height="' + (height - 1) + '" rx="3"></rect>',
+                                // Gratipay heart
+                                '<path d="',
+                                  'M26.95513,10.56585 C18.98364,10.56585 12.521,17.02855 12.521,25.00005 ',
+                                  'C12.521,32.97255 18.98364,39.43415 26.95513,39.43415 C34.92855,39.43415 ',
+                                  '41.38927,32.97255 41.38927,25.00005 C41.38927,17.02855 34.92855,10.56585 ',
+                                  '26.95513,10.56585 L26.95513,10.56585 Z ',
+                                  'M23.05792,19.05805 C23.97771,19.11705 24.76596,19.67325 25.27115,20.26085 ',
+                                  'C25.57331,20.61115 26.10063,21.00655 27.07542,21.00655 C28.05213,21.00655 ',
+                                  '28.55444,20.61115 28.85563,20.26085 C29.66394,19.32065 31.20069,18.49215 ',
+                                  '32.82501,19.56315 C34.73224,20.82085 34.19818,23.09475 33.64295,23.74905 ',
+                                  'L27.07542,32.65015 L20.50789,23.74905 C19.95265,23.09475 19.39453,20.82085 ',
+                                  '21.30176,19.56315 C21.91089,19.16155 22.50604,19.02265 23.05792,19.05805 ',
+                                  'L23.05792,19.05805 Z',
+                                  '" id="path46" fill="#FFFFFF"></path>',
+                            '</g>',
+                        '</g>',
+                        // Text
+                        '<text id="Support-via-Gratipay" fill="white" filter="url(#filter-2)" ',
+                          'font-family="' + fontFamily + '" font-size="' + fontSize + '" font-weight="' + fontWeight + '">',
+                            '<tspan x="50" y="28" fill="#FFFFFF">' + text + '</tspan>',
+                        '</text>',
+                    '</g>',
                 '</g>',
-            '</g>',
-            // Text
-            '<text id="Support-via-Gratipay" fill="white" filter="url(#filter-2)" ',
-              'font-family="' + fontFamily + '" font-size="' + fontSize + '" font-weight="' + fontWeight + '">',
-                '<tspan x="50" y="28" fill="#FFFFFF">' + text + '</tspan>',
-            '</text>',
-        '</g>',
-    '</g>',
-'</svg>'
+            '</svg>'
           ].join('');
 
           // Output the image for debugging
           var $svg = document.createElement('img');
           $svg.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
           document.body.appendChild($svg);
+
           // Save the image for consumption by PhantomJS
-          // console.log(svg);
-          window.image = svg;
+          window.svgImage = svg;
         }());
       </script>
     </p>
     <h3>Canvas output</h3>
     <script src="vendor/html2canvas.js"></script>
     <script>
-      // (function () {
-      //   var $button = document.getElementById('button');
-      //   window.$button = $button;
-      //   html2canvas($button, {
-      //     onrendered: function (canvas) {
-      //       document.body.appendChild(canvas);
-      //       window.image = canvas.toDataURL();
-      //     }
-      //   });
-      // }());
+      (function () {
+        var $button = document.getElementById('button');
+        window.$button = $button;
+        html2canvas($button, {
+          onrendered: function (canvas) {
+            document.body.appendChild(canvas);
+            window.pngImage = canvas.toDataURL();
+          }
+        });
+      }());
     </script>
   </body>
 
