@@ -1,4 +1,6 @@
 # gratipay-badge changelog
+2.3.0 - Automated SVG properties to be built from HTML
+
 2.2.0 - Added SVG image via @lvillani in #9
 
 2.1.5 - Upgraded `semver-branches` to fix keyword release issue
