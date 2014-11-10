@@ -35,7 +35,9 @@
               height: $button.css('height')
             },
             width: $button.css('width').replace('px', ''),
-            height: $button.css('height').replace('px', '')
+            height: $button.css('height').replace('px', ''),
+            innerWidth: +($button.css('width').replace('px', '')) - 1,
+            innerHeight: +($button.css('height').replace('px', '')) - 1,
 
             background: {
               // $button.css('background-image')
@@ -45,7 +47,7 @@
               stopPosition: '0%',
               startColor: 'rgb(138, 221, 109)',
               stopColor: 'rgb(96, 176, 68)'
-            }
+            },
 
             fontFamily: $span.css('font-family'),
             fontSize: $span.css('font-size'),
@@ -62,11 +64,12 @@
               'xmlns="http://www.w3.org/2000/svg">',
                 '<defs>',
                     // '<linearGradient x1="48.1995668%" y1="3.2498%" x2="48.1995668%" y2="99.6574%" id="linearGradient-1">',
-                    '<linearGradient x1="' + gradientStartPosition + '" y1="0%" x2="' + gradientStopPosition + '%" y2="100%" id="linearGradient-1">',
+                    '<linearGradient x1="{{background.startPosition}}" y1="0%" ',
+                      'x2="{{background.stopPosition}}" y2="100%" id="linearGradient-1">',
                         // '<stop stop-color="#8ADD6D" offset="0%"></stop>',
                         // '<stop stop-color="#60B044" offset="100%"></stop>',
-                        '<stop stop-color="' + gradientStartColor + '" offset="0%"></stop>',
-                        '<stop stop-color="' + gradientStopColor + '" offset="100%"></stop>',
+                        '<stop stop-color="{{background.startColor}}" offset="0%"></stop>',
+                        '<stop stop-color="{{background.stopColor}}" offset="100%"></stop>',
                     '</linearGradient>',
                     // TODO: Is there a simpler way to define text shadow in SVG?
                     '<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">',
@@ -86,7 +89,7 @@
                             '<g id="layer1" transform="translate(-0.500000, 0.125000)">',
                                 // Button
                                 '<rect id="rect2987" stroke="#5CA941" fill="url(#linearGradient-1)" x="0" y="0" ',
-                                  'width="' + (width - 1) + '" height="' + (height - 1) + '" rx="3"></rect>',
+                                  'width="{{innerWidth}}" height="{{innerHeight}}" rx="3"></rect>',
                                 // Gratipay heart
                                 '<path d="',
                                   'M26.95513,10.56585 C18.98364,10.56585 12.521,17.02855 12.521,25.00005 ',
@@ -105,8 +108,8 @@
                         '</g>',
                         // Text
                         '<text id="Support-via-Gratipay" fill="white" filter="url(#filter-2)" ',
-                          'font-family="' + fontFamily + '" font-size="' + fontSize + '" font-weight="' + fontWeight + '">',
-                            '<tspan x="50" y="28" fill="#FFFFFF">' + text + '</tspan>',
+                          'font-family="{{fontFamily}}" font-size="{{fontSize}}" font-weight="{{fontWeight}}">',
+                            '<tspan x="50" y="28" fill="#FFFFFF">{{text}}</tspan>',
                         '</text>',
                     '</g>',
                 '</g>',
