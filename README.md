@@ -4,8 +4,6 @@ GitHub styled badge for [Gratipay][]
 
 PNG: ![Gratipay badge][] SVG: ![Gratipay badge][svg-badge]
 
-> Rendering discrepencies are hoping to be addressed in https://github.com/gratipay/gratipay-badge/issues/10
-
 [Gratipay]: https://gratipay.com/
 [Gratipay badge]: dist/gratipay.png
 [svg-badge]: http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg
