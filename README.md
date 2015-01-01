@@ -8,8 +8,8 @@ PNG: ![Gratipay badge][] SVG: ![Gratipay badge][svg-badge]
 [Gratipay badge]: dist/gratipay.png
 [svg-badge]: http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg
 
-<div >
-    <img style="text-align: right" src="http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg" />
+<div align="right">
+    <img src="http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg" />
 </div>
 
 ## Usage
