@@ -8,7 +8,9 @@ PNG: ![Gratipay badge][] SVG: ![Gratipay badge][svg-badge]
 [Gratipay badge]: dist/gratipay.png
 [svg-badge]: http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg
 
-<img style="position: fixed; top: 0; left: 0;" src="http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg" />
+<div style="position: fixed; top: 0; left: 0;">
+    <img src="http://rawgit.com/gratipay/gratipay-badge/master/dist/gratipay.svg" />
+</div>
 
 ## Usage
 To ensure you are using a stable badge, it is suggested you use a semver'd badge.
